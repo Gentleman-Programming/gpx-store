@@ -46,7 +46,7 @@ export declare class StateObject {
      * @param property - the name of the requested property, if no property it will try to patch the values into the state
      * @return void
      */
-    setStateValues(value: any, property: string | null): void;
+    private setStateValues;
     /**
      * @desc resets the state
      * @return void

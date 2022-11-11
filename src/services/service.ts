@@ -1,4 +1,5 @@
-import { GentlemanState } from "../models";
-import { SourceOfTruth } from "../store/store";
+import { GentlemanState, SourceOfTruthInitiate } from "../models";
 
-export const GPX = new GentlemanState(SourceOfTruth);
+export const createStore = (SourceOfTruth: SourceOfTruthInitiate[]) => {
+  return new GentlemanState(SourceOfTruth);
+};
