@@ -2,14 +2,13 @@
   "name": "gpx-store",
   "version": "1.0.2",
   "description": "A state manager for the Agnostic Gentleman",
-  "main": "lib/cjs/index.js",
-  "module": "lib/esm/index.js",
+  "main": "lib/index.js",
   "type": "module",
   "files": [
     "lib/"
   ],
   "scripts": {
-    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "tsc": "tsc -p tsconfig.json",
     "prepublish": "npm run tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,7 +20,7 @@
   "devDependencies": {
     "typescript": "^4.8.4"
   },
-  "types": "./lib/cjs/index.d.ts",
+  "types": "./lib/index.d.ts",
   "directories": {
     "lib": "lib"
   },
