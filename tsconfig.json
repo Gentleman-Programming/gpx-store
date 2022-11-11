@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
-    "module": "commonjs" /* Specify what module code is generated. */,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
