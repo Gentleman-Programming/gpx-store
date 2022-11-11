@@ -13,15 +13,35 @@
     "prepublish": "npm run tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": {
-    "name": "Agnostic Gentleman",
-    "email": "gentlemanprogramming@gmail.com"
-  },
+  "author": "Agnostic Gentleman <gentlemanprogramming@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "rxjs": "^7.5.7"
   },
   "devDependencies": {
     "typescript": "^4.8.4"
-  }
+  },
+  "types": "./lib/cjs/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gentleman-Programming/gpx-store.git"
+  },
+  "keywords": [
+    "store",
+    "state",
+    "manager",
+    "react",
+    "angular",
+    "vue",
+    "typescript",
+    "javascript",
+    "programming"
+  ],
+  "bugs": {
+    "url": "https://github.com/Gentleman-Programming/gpx-store/issues"
+  },
+  "homepage": "https://github.com/Gentleman-Programming/gpx-store#readme"
 }
