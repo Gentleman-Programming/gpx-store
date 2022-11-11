@@ -1,0 +1,27 @@
+{
+  "name": "AgnosticGentlemanStateManager",
+  "version": "1.0.0",
+  "description": "A state manager for the Agnostic Gentleman",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "type": "module",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublish": "npm run tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Agnostic Gentleman",
+    "email": "gentlemanprogramming@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^7.5.7"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
