@@ -16,7 +16,7 @@ export class StateObject {
 
   /**
    * @desc returns the observable that contains the state for async operations - it listens for changes
-   * @return Observable
+   * @return Observable<State>
    */
   getObservable(): Observable<State> {
     return this.observableSubject.asObservable();
@@ -32,7 +32,7 @@ export class StateObject {
 
   /**
    * @desc returns the value of the state at the time of the call
-   * @return T
+   * @return State
    */
   getStateSnapshot(): State {
     return { ...this.state };
@@ -50,7 +50,7 @@ export class StateObject {
   /**
    * @desc returns the value of a property of the state for async operations - it listens for changes
    * @param property - the name of the requested property
-   * @return Observable
+   * @return Observable<any>
    */
   getPropertyFromObservable(property: string): Observable<any> {
     return this.getObservable().pipe(
@@ -59,7 +59,7 @@ export class StateObject {
   }
 
   /**
-   * @desc sets the value for a certain property inside the state, triggers an async event
+   * @desc sets the value for a certain property inside the state, triggers an async event if requested
    * @param value - the value for the requested property
    * @param property - the name of the requested property
    * @param emit - if true it will trigger an async event

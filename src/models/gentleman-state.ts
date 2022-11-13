@@ -33,7 +33,7 @@ export class GentlemanState {
    * @desc it creates a new source of truth instead of the object.
    * @param key: string
    * @param state: any
-   * @return StateObject
+   * @return void
    */
   createNewSourceOfTruth(key: string, state: any): void {
     this.createObservable(key, state);
@@ -43,7 +43,6 @@ export class GentlemanState {
    * @desc it creates and observable and adds it to the observable array.
    * @param key - the key to be used to represent the observable item inside the array
    * @param state - the state of the observable, the object that represents what the observable is going to contain
-   * @param stateProperties - the properties of the state
    * @return void
    */
   private createObservable(key: string, state: any): void {
